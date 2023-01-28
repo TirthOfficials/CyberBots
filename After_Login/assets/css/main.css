@@ -608,6 +608,26 @@ section {
     z-index: 9996;
   }
 }
+.img_panel row{
+  display: flex;
+}
+.img1{
+  height: 300px;
+  width: 300px;
+  padding: 5px;
+  
+}
+.img2{
+  height: 300px;
+  width: 300px;
+  padding: 5px;
+ 
+}
+.img3{
+  height: 300px;
+  width: 300px;
+  padding: 5px;
+}
 
 /*--------------------------------------------------------------
 # Featured Services Section
