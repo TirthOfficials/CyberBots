@@ -25,7 +25,6 @@ if (check!='done'){
     window.location = '../index.html';
 }
 // var t=userl.substring(0, 5);
-// console.log(t);
 var t=userl.substring(0, 5);
 console.log(t);
 document.getElementById("userlogin").innerHTML = t + val1;
@@ -37,5 +36,5 @@ function logout1(){
 
 function callmap(){
     window.location = 'Map/index.html';
-    window.open(window.location, "_blank");
+    
 }
