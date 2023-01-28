@@ -10,7 +10,7 @@ const firebaseConfig = {
   };
   firebase.initializeApp(firebaseConfig);
 
-//  //invokes firebase authentication.
+
 //  const auth = firebase.auth();
  let id2 = '';
  var myRef = firebase.database().ref('login');
