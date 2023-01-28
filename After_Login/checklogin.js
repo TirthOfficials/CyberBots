@@ -29,3 +29,8 @@ if (check!='done'){
 var t=userl.substring(0, 5);
 console.log(t);
 document.getElementById("userlogin").innerHTML = t + val1;
+function logout1(){
+    console.log("Logout")
+    localStorage.clear();
+    window.location = '../index.html';
+}

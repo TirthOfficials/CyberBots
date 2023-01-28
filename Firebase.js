@@ -61,7 +61,7 @@ const firebaseConfig = {
     // var ref = database.ref("signup");
     // ref.push(data);
     console.log("done database");
-    alert("Data Stored");
+    // alert("Data Stored");
   }
   console.log("not done")
   document.querySelector("#register").addEventListener("click", () => {
@@ -133,7 +133,7 @@ const login = () => {
                 
                 // const fn1= database.ref('login/'+ user.uid).once('value');
                 // console.log(fn1);
-                alert("Logged In");
+                // alert("Logged In");
                 window.location = 'After_Login/index.html'; //After successful login, user will be redirected to home.html
               }
               
