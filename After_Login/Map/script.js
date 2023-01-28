@@ -28,3 +28,7 @@ function setupMap(center){
       map.addControl(directions, 'top-left');
 }
 
+function ride_list(){
+    window.location="After_Map/ridelist/index.html";
+}
+
