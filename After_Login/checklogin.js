@@ -34,3 +34,8 @@ function logout1(){
     localStorage.clear();
     window.location = '../index.html';
 }
+
+function callmap(){
+    window.location = 'Map/index.html';
+    window.open(window.location, "_blank");
+}
