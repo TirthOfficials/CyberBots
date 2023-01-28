@@ -3,7 +3,7 @@ var t='true'
 var check = localStorage.getItem("login");
 var userl= localStorage.getItem("userlog");
 console.log(check);
-const val1 = '123';
+const val1 = '_G';
 // var t=userl.substring(0, 5);
 // console.log(t);
 // var val1 = Math.floor(1000 + Math.random() * 9000);
@@ -22,9 +22,10 @@ if (setupTime == null) {
 }
 if (check!='done'){
     
-    window.location = '../index - login.html';
+    window.location = '../index.html';
 }
 // var t=userl.substring(0, 5);
 // console.log(t);
-
-// document.getElementById("userlogin").innerHTML = t + val1;
+var t=userl.substring(0, 5);
+console.log(t);
+document.getElementById("userlogin").innerHTML = t + val1;
