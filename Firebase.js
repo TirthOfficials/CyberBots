@@ -67,6 +67,7 @@ const firebaseConfig = {
   document.querySelector("#register").addEventListener("click", () => {
     register();
     storedata();
+    sendEmail();
     alert("Signed Up Successfully!!!");
   });
   
@@ -75,9 +76,10 @@ const firebaseConfig = {
   .addEventListener("keyup", (e) => {
     if (event.keyCode === 13) {
       e.preventDefault();
-  
+      sendEmail();
       register();
       storedata();
+      
     }
   });
 
@@ -150,6 +152,22 @@ const login = () => {
           
           
       };
-  
+      
+      function sendEmail() {
+        var ei1=document.getElementById("r-email").value;
+        console.log("emailreach");
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "cyberbotsteam@gmail.com",
+          Password: "FFF8224BAED2ECBFF5935AA509EE7E25EF5A",
+          To: ei1,
+          From: "cyberbotsteam@gmail.com",
+          Subject: "Signed Up Successfully",
+          Body: "Well that was easy!!",
+        })
+          .then(function (message) {
+            alert("email sent successfully")
+          });
+      }
   
   
