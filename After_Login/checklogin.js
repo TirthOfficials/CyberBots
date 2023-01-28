@@ -22,7 +22,7 @@ if (setupTime == null) {
 }
 if (check!='done'){
     
-    // window.location = '../index - login.html';
+    window.location = '../index - login.html';
 }
 // var t=userl.substring(0, 5);
 // console.log(t);
