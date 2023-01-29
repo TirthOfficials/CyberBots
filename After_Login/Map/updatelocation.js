@@ -36,5 +36,6 @@ function showPosition(position) {
     Longitude: lon1
 });
     alert("Location Updated");
+    console.log("Location Added")
 }
 
