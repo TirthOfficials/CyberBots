@@ -14,6 +14,7 @@ const firebaseConfig = {
     var t2=userl2.substring(0, 5);
     var logged_u2=t2+val3;
     console.log(logged_u2);
+    document.getElementById("user12").innerHTML = logged_u2;
   let id2 = "signup";
   firebase.database().ref('login/'+ id2).orderByChild('username').equalTo('toxicofficials').on("value", function(snapshot) {
     console.log(snapshot.val());
