@@ -28,7 +28,7 @@ function showPosition(position) {
   let ref1='location';
   firebase.database().ref('CurrentLocation/'+ ref1).push().set({
     Latitude: lat1,
-    longitude: lon1
+    Longitude: lon1
 });
     alert("Location Updated");
 }
