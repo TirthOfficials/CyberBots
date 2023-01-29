@@ -133,9 +133,7 @@ const login = () => {
                 localStorage.setItem("userlog", user.email);
                 console.log(user.email);
                 
-                // const fn1= database.ref('login/'+ user.uid).once('value');
-                // console.log(fn1);
-                // alert("Logged In");
+                
                 window.location = 'After_Login/index.html'; //After successful login, user will be redirected to home.html
               }
               
