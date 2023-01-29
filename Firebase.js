@@ -51,7 +51,7 @@ const firebaseConfig = {
     //     password: pw
     // }
     let id1 = "signup";
-    firebase.database().ref('login/'+ id1).push().set({
+    firebase.database().ref('login/'+ id1).child(usn).set({
         FullName: fn,
         username: usn,
         email: ei,
