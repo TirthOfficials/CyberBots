@@ -19,17 +19,23 @@ function getLocation() {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
-
+var userl1= localStorage.getItem("userlog");
+const val2 = '_G';
+var t1=userl1.substring(0, 5);
+var logged_u1=t1+val2;
+console.log(logged_u1);
 function showPosition(position) {
     var lat1=position.coords.latitude;
     var lon1=position.coords.longitude;
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
   let ref1='location';
-  firebase.database().ref('CurrentLocation/'+ ref1).push().set({
+  
+  firebase.database().ref('CurrentLocation/'+ ref1).child(logged_u1).set({
     Latitude: lat1,
     Longitude: lon1
 });
     alert("Location Updated");
+    console.log("Location Added")
 }
 

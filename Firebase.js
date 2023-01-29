@@ -51,7 +51,7 @@ const firebaseConfig = {
     //     password: pw
     // }
     let id1 = "signup";
-    firebase.database().ref('login/'+ id1).push().set({
+    firebase.database().ref('login/'+ id1).child(usn).set({
         FullName: fn,
         username: usn,
         email: ei,
@@ -133,9 +133,7 @@ const login = () => {
                 localStorage.setItem("userlog", user.email);
                 console.log(user.email);
                 
-                // const fn1= database.ref('login/'+ user.uid).once('value');
-                // console.log(fn1);
-                // alert("Logged In");
+                
                 window.location = 'After_Login/index.html'; //After successful login, user will be redirected to home.html
               }
               
