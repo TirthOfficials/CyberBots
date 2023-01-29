@@ -9,3 +9,8 @@ const firebaseConfig = {
     measurementId: "G-FNBN7QRX38"
   };
   firebase.initializeApp(firebaseConfig);
+  let id2 = "signup";
+  
+  firebase.database().ref('login/'+ id2).on('value',(snap)=>{
+    console.log(snap.val());
+  });
